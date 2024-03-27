@@ -48,7 +48,7 @@ public class MainGenerator {
         String projectPath = System.getProperty("user.dir");
         File parentFile = new File(projectPath).getParentFile();
 
-        String inputPath = new File(parentFile, "").getAbsolutePath();
+        String inputPath = new File(projectPath, "").getAbsolutePath();
         String dynamicInputPath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl";
         String dynamicOutputPath = inputPath + File.separator + "samples/acm-template/src/com/itegg/acm/MainTemplate.java";
         //指定模板文件所在的路径
